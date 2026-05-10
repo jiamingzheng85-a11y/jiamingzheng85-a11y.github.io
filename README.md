@@ -1,85 +1,85 @@
-# 郑嘉铭个人主页
+# Jiaming Zheng Personal Homepage
 
-这个目录已经整理成可以直接部署到 `GitHub Pages` 的静态个人主页。
+This directory contains a static personal homepage that can be deployed directly with `GitHub Pages`.
 
-## 当前文件
+## Files
 
-- `index.html`：主页主文件
-- `styles.css`：页面样式
-- `.nojekyll`：告诉 GitHub Pages 按纯静态站点发布
+- `index.html`: main homepage file
+- `styles.css`: page styling
+- `.nojekyll`: ensures GitHub Pages serves the site as a plain static website
 
-## 怎么本地看效果
+## Local Preview
 
-最简单的方法：
+The simplest way:
 
-1. 进入这个目录
-2. 双击 `index.html`
-3. 浏览器会直接打开页面
+1. Open this directory
+2. Double-click `index.html`
+3. Your browser will open the page directly
 
-如果你想用本地服务器方式预览，可以在这个目录打开终端后运行：
+If you prefer to preview it through a local server, open a terminal in this directory and run:
 
 ```powershell
 python -m http.server 8000
 ```
 
-然后访问 `http://localhost:8000`
+Then visit `http://localhost:8000`
 
-## 怎么上传到 GitHub
+## Uploading to GitHub
 
-最省事的是直接用网页上传：
+The easiest option is to upload the files through the GitHub web interface:
 
-1. 登录 GitHub
-2. 点右上角 `+`
-3. 选择 `New repository`
-4. 仓库名建议填：
+1. Sign in to GitHub
+2. Click the `+` icon in the upper-right corner
+3. Select `New repository`
+4. Recommended repository names:
    - `zhengjiaming-homepage`
-   - 或者如果你想要更标准的个人站网址，可以用 `你的GitHub用户名.github.io`
-5. 仓库建议设为 `Public`
-6. 创建仓库后，进入仓库主页
-7. 点击 `Add file`
-8. 选择 `Upload files`
-9. 把这个文件夹里的这几个文件拖进去：
+   - or, if you want the site at the root personal URL, `your-github-username.github.io`
+5. Set the repository to `Public`
+6. After creating the repository, open it
+7. Click `Add file`
+8. Select `Upload files`
+9. Drag the following files into the upload area:
    - `index.html`
    - `styles.css`
    - `.nojekyll`
-10. 等上传完成后，点击页面底部 `Commit changes`
+10. After the upload completes, click `Commit changes`
 
-## 怎么开启 GitHub Pages
+## Enabling GitHub Pages
 
-根据 GitHub Docs 当前流程：
+According to the current GitHub Pages workflow:
 
-1. 进入你刚创建的仓库
-2. 点击仓库上方的 `Settings`
-3. 在左侧找到 `Pages`
-4. 在 `Build and deployment` 里：
-   - `Source` 选择 `Deploy from a branch`
-   - `Branch` 选择 `main`
-   - `Folder` 选择 `/(root)`
-5. 点击 `Save`
-6. 等待几十秒到几分钟，GitHub 会自动发布
+1. Open the repository
+2. Click `Settings`
+3. In the left sidebar, select `Pages`
+4. Under `Build and deployment`:
+   - set `Source` to `Deploy from a branch`
+   - set `Branch` to `main`
+   - set `Folder` to `/(root)`
+5. Click `Save`
+6. Wait from a few seconds to a few minutes for deployment
 
-## 发布后网址是什么
+## Deployment URL
 
-如果你的仓库名是普通名字，比如：
+If your repository uses a standard name such as:
 
 - `zhengjiaming-homepage`
 
-那网址通常是：
+the URL is typically:
 
-- `https://你的用户名.github.io/zhengjiaming-homepage/`
+- `https://your-username.github.io/zhengjiaming-homepage/`
 
-如果你的仓库名直接就是：
+If your repository is named:
 
-- `你的用户名.github.io`
+- `your-username.github.io`
 
-那网址通常就是：
+then the URL is typically:
 
-- `https://你的用户名.github.io/`
+- `https://your-username.github.io/`
 
-## 之后如果要继续改
+## Future Updates
 
-你只需要重新上传并覆盖这几个文件，再提交一次，页面就会自动更新。
+To update the site later, simply upload and replace the same files, then commit the changes. GitHub Pages will redeploy the site automatically.
 
-## 备注
+## Notes
 
-如果你后面要加头像、项目图、简历 PDF 下载，我建议再补一个 `assets/` 文件夹专门放图片和附件。
+If you later want to add a profile photo, project images, or a downloadable CV, it is best to create an `assets/` folder for images and attachments.
